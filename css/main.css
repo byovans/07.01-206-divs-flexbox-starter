@@ -97,44 +97,95 @@ textarea {
 
 
 html {
-  background-color: black;
+  background-color: #00000f;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  width: 100%;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   font-weight: 100;
-  border: 5px solid black;
   justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0 3em;
+  font-family: 'Playfair Display', serif;
+  word-spacing: .025em;
 }
 
-.div-1, .div-2, .div-3 {
+.div-2, .div-3, .div-4 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.5em;
+  line-height: 2em;
   font-size: 1em;
-  height: 300px;
+  height: 250px;
   width: 30%;
   color: white;
-  padding: 0 1.5em;
-  line-height: 2em;
 }
 
 
-.div-2 {
-    border-left: gray solid 2px;
-    border-right: gray solid 2px;
 
+header {
+    color: white;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2em 2em;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: .125em;
+}
+
+
+.div-1 {
+    color: white;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: gray solid 2px;
+}
+
+
+.div-3 {
+    border-left: gray solid 1.5px;
+    border-right: gray solid 1.5px;
+    padding: 0 2em;
+}
+
+
+footer {
+    height: 3em;
+    border-top: gray solid 2px;
+    margin: 2em 3em;
+    color: white;
+    width: auto;
+}
+
+
+.list {
+    display: flex;
+    justify-content: start;
+    padding-left: 0;
+}
+
+
+.li {
+    list-style-type: none;
+    flex-flow: row;
+    padding: 0 1em 0 0;
+    
+}
+
+a {
+    color: white;
 }
 
 
